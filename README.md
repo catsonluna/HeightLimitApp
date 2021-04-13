@@ -35,3 +35,6 @@ I will be working on these things, but if anyone wants to contribute i would rea
 
  If you have done something and want to contribute, please in your title, describe the feature youve added, and in the description, add anything else that could be usefull
  like if you have added another packedge say in your description "You need to run "yarn add NAME" or just more indept of what youve made"
+ 
+# Discord
+For easy communications I use discord, and you can join it too https://discord.gg/Fykpshg
