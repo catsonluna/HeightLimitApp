@@ -2,7 +2,7 @@
  A desktop application built for all systems. The idea of bringing [HeightLimitMod](https://github.com/pinkulu/HeightLimitMod) to all the clients from lunar to BLC.
  
 ## To Do:
- - [ ] Make the UI
+ - [ ] Make the UI (working on)
  - [ ] A way to read the chat file
 
 These are the prioritys right now, but there will be more things added as the list completes
