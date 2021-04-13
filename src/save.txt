@@ -1,0 +1,32 @@
+
+const fetchPinkuluData = (): Promise<any> => {
+  return axios.get('https://api.pinkulu.com/HeightLimitMod/BedWars/data')
+  .then(({data}) => {
+    // handle success
+    console.log(data);
+    return JSON.stringify(data)
+  })
+  .catch(err => {
+    // handle error
+    console.error(err);
+  });
+
+    const [data, setData] = useState('') 
+
+  useEffect(() => {
+    fetchPinkuluData().then((data) => {
+      setData(data || '')
+    })
+  }, [])
+
+
+  import axios from 'axios';
+
+
+        <p>
+          {count}        </p>
+        <button onClick={() => {
+          setCounter(count + 1)
+        }}>
+          Click Me!
+        </button>
