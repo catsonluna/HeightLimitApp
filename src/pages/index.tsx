@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function MainPage() {
   return (
     <div className="App">
+        <div className="App-header">
     <ListGroup className="position-absolute bottom-0 start-0">
       <ListGroup.Item action href="/">
         Home Page
@@ -14,6 +15,7 @@ export default function MainPage() {
       </ListGroup.Item>
     </ListGroup>
     <p>This Is The Main Page</p>
+        </div>
   </div>
   );
 }
