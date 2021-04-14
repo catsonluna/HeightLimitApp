@@ -5,7 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function error() {
   return (
     <div className="App">
-    <p>This Is The Error Page</p>
-  </div>
+    <div className="App-header">
+    <h1 className="404">404 Page Not Found</h1>
+    <p className="404Small">Sorry, I couldnt find that page</p>
+    </div>
+ </div>
   );
 }
