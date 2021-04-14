@@ -7,7 +7,7 @@ export default function Settings() {
   return (
     <div className="App">
         <div className="App-header">
-        <ListGroup className="position-absolute bottom-0 start-0">
+    <ListGroup className="position-absolute bottom-0 start-0">
     <ListGroup.Item action href="/">
         Home Page
       </ListGroup.Item>
@@ -24,7 +24,7 @@ export default function Settings() {
         Settings
       </ListGroup.Item>
     </ListGroup>
-    <p>This Is The Settings Page</p>
+    <p>This Is The Stats Page</p>
     </div>
   </div>
   );

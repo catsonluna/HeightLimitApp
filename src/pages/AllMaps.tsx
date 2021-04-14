@@ -1,9 +1,8 @@
 import "./App.css"
-
 import ListGroup from 'react-bootstrap/ListGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function Settings() {
+export default function MainPage() {
   return (
     <div className="App">
         <div className="App-header">
@@ -24,8 +23,8 @@ export default function Settings() {
         Settings
       </ListGroup.Item>
     </ListGroup>
-    <p>This Is The Settings Page</p>
-    </div>
+    <p>This Is The All Maps Page</p>
+        </div>
   </div>
   );
-  }
+}
