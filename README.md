@@ -4,6 +4,11 @@
 ## To Do:
  - [ ] Make the UI (working on)
  - [ ] A way to read the chat file
+ - [ ] Main page
+ - [ ] Current Map page
+ - [ ] All Maps Page
+ - [ ] Stats page maybe?
+ - [ ] Settings page
 
 These are the prioritys right now, but there will be more things added as the list completes
 
