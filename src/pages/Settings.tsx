@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Settings() {
   return (
     <div className="App">
+        <div className="App-header">
     <ListGroup className="position-absolute bottom-0 start-0">
       <ListGroup.Item action href="/">
         Home Page
@@ -15,6 +16,7 @@ export default function Settings() {
       </ListGroup.Item>
     </ListGroup>
     <p>This Is The Settings Page</p>
+    </div>
   </div>
   );
   }
