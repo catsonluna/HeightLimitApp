@@ -1,5 +1,5 @@
 # HeightLimitApp
- A desktop application built for all systems. The idea of bringing [HeightLimitMod](https://github.com/pinkulu/HeightLimitMod) to all the clients from lunar to BLC.
+ A desktop application built for all systems. The idea of bringing [HeightLimitMod](https://github.com/pinkulu/HeightLimitMod) to all the clients, like lunar, BLC and even vanilla.
  
 ## To Do:
  - [ ] Make the UI (working on)
