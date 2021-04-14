@@ -30,3 +30,23 @@ const fetchPinkuluData = (): Promise<any> => {
         }}>
           Click Me!
         </button>
+
+
+    <html> 
+      <head>
+        <title>Height Limit App</title>
+      </head>
+      <body className="App-header">
+        <div className="App">
+          <ListGroup className="position-absolute bottom-0 start-0">
+            <ListGroup.Item action href="App.tsx">
+              Home Page
+            </ListGroup.Item>
+            <ListGroup.Item action href="Settings.tsx">
+            Settings
+            </ListGroup.Item>
+          </ListGroup>
+          <p>This Is The Home Page</p>
+        </div>
+      </body>
+    </html>

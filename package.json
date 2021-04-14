@@ -9,20 +9,25 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/bootstrap": "^5.0.12",
     "@types/react-bootstrap": "^0.32.25",
+    "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
     "concurrently": "^6.0.2",
     "cross-env": "^7.0.3",
     "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "electron-is-dev": "^2.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.2.4",
     "wait-on": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
-  "main": "public/main.tsx",
+  "main": "public/main.js",
   "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
@@ -30,8 +35,21 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "",
+    "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
     "electron:start": "wait-on tcp:3000 && electron ."
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.pinkulu.HeightLimitApp",
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +70,7 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3"
   }
