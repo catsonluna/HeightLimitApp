@@ -2,7 +2,17 @@ import "./App.css"
 import ListGroup from 'react-bootstrap/ListGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+export interface IFiles {
+  Read: () => void
+}
+
+declare global {
+  interface Window {
+    Files: IFiles
+  }
+}
 export default function MainPage() {
+  
   return (
     <div className="App">
         <div className="App-header">
@@ -23,8 +33,12 @@ export default function MainPage() {
         Settings
       </ListGroup.Item>
     </ListGroup>
+    <button onClick={() => {
+      window.Files.Read()
+    }}>Test
+    </button>
     <p>This Is The Current Map Page</p>
-        </div>
+     </div>
   </div>
   );
 }
