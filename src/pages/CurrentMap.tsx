@@ -3,7 +3,10 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export interface IFiles {
-  Read: () => void
+  ReadVanilla: () => void,
+  ReadLunar: () => void,
+  ReadBLC: () => void,
+  ReadCustom: () => void
 }
 
 declare global {
@@ -34,8 +37,8 @@ export default function MainPage() {
       </ListGroup.Item>
     </ListGroup>
     <button onClick={() => {
-      window.Files.Read()
-    }}>Test
+      window.Files.ReadVanilla()
+    }}>Vannila/Forge
     </button>
     <p>This Is The Current Map Page</p>
      </div>

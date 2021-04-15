@@ -3,7 +3,11 @@ const { contextBridge, ipcRenderer } = require('electron')
 contextBridge.exposeInMainWorld(
   'Files',
   {
-    Read: () => ipcRenderer.send('GetFiles')
+    ReadVanilla: () => ipcRenderer.send('GetVanilla'),
+    ReadLunar: () => ipcRenderer.send('GetLunar'),
+    ReadBLC: () => ipcRenderer.send('GetBLC'),
+    ReadCustom: () => ipcRenderer.send('GetCustom')
+
   }
   
 )

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Height Limit App",
+  "name": "Its like HeightLimitMod, but for all the clients.",
   "icons": [
     {
       "src": "favicon.ico",
