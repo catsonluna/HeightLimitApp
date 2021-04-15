@@ -3,7 +3,7 @@
  
 ## To Do:
  - [ ] Make the UI (working on)
- - [ ] A way to read the chat file
+ - [x] A way to read the chat file
  - [ ] Main page
  - [ ] Current Map page
  - [ ] All Maps Page
