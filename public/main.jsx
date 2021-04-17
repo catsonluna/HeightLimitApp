@@ -1,3 +1,4 @@
+const axios = require('axios');
 const {
 	app,
 	BrowserWindow,
@@ -7,6 +8,8 @@ const {
 
 const path = require('path')
 var fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
+
+const isDev = require('electron-is-dev')
 
 require("@electron/remote/main").initialize()
 
@@ -19,7 +22,7 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js')
 		}
 	})
-	win.loadURL('http://localhost:3000')
+	win.loadURL( isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`)
 
 }
 
@@ -62,9 +65,20 @@ ipcMain.on('GetVanilla', () => {
 				const lines = buffer.toString('latin1').split(/\r?\n/).slice(0, -1);
 				lines.forEach(line => {
 				if(line.includes(`[CHAT] {`))
-					{
+					{	try{
 						var obj = JSON.parse(line.split("[CHAT]")[1]);
+						axios.get(`https://api.pinkulu.com/HeightLimitMod/BedWars/8team/${obj.map.toLowerCase().replace(" ", "_")}`)
+									.then(({data}) => {
+									  console.log(data)
+									  return JSON.stringify(data)
+									})
+									.catch(err => {
+									  console.error(err);
+									});
 						console.log(obj.gametype)
+					}catch(err){
+						console.log(err)
+					}
 					}
 				});
 			});

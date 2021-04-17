@@ -36,11 +36,21 @@ export default function MainPage() {
         Settings
       </ListGroup.Item>
     </ListGroup>
-    <button onClick={() => {
-      window.Files.ReadVanilla()
-    }}>Vannila/Forge
-    </button>
-    <p>This Is The Current Map Page</p>
+    <div className="position-absolute top-0 end-0">
+      <button onClick={() => {
+        window.Files.ReadVanilla()
+      }}>Vannila/Forge
+      </button>
+    </div>
+    <div className="current-map">
+      <div className="announcement">
+    <h1>Map Name</h1>
+    <p>Build Limit</p>
+    <p>Mode</p>
+    </div>
+    <div className="Social">
+    </div>
+    </div>
      </div>
   </div>
   );

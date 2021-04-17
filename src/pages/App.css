@@ -3,12 +3,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #272a31;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
+}
+.news{
+  width: 80vh;
+  height: 80vh;
+  border: 1.5vh solid #1e1f20;
+  padding: 5vh;
+  margin: 2vh;
+  background-color: #383c46;
+}
+.current-map{
+  width: 50vh;
+  height: 30vh;
+  border: 1.5vh solid #1e1f20;
+  padding: 5vh;
+  margin: 2vh;
+  background-color: #383c46;
 }
